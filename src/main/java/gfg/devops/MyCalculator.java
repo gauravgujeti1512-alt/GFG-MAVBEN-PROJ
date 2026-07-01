@@ -9,11 +9,22 @@ public class MyCalculator {
 	{
 		return a-b;
 	}
+	public int mul (int a, int b)
+	{
+		return a*b;
+	}
+	
+	public int div (int a, int b)
+	{
+		return a/b;
+	}
 	
 	public static void main(String[] args) {
 		MyCalculator calc = new MyCalculator();
 		System.out.println ("sum is :"+calc.sum(20, 10));
 		System.out.println ("diff is :"+calc.diff(20, 10));
+		System.out.println ("Mul is :"+calc.mul(20, 10));
+		System.out.println ("Div is :"+calc.div(20, 10));
 	}
 
 }
